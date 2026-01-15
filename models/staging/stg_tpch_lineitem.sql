@@ -5,7 +5,7 @@ with source as (
 ),
 
 renamed as (
-
+-- Hello World
     select
         -- ID columns
         {{ dbt_utils.generate_surrogate_key(['l_orderkey', 'l_linenumber']) }} as lineitem_id, -- Unique Key generation
